@@ -1,22 +1,29 @@
 namespace parcial1.Models;
 
-public  class Sure
+public class Sure
 {
- public string Name {get; set; }
- public Plan Plan {get; set; }
+ public string Cobertura {get; set; }
  public string Description {get; set; }
- public bool Lojack {get; set; }
-  public decimal Price {get; set; }
+  public bool Lojack {get; set; }
+  public decimal Tasa {get; set; }
+  public Plan Planes {get; set; }
 }
+
 
 public enum Plan
 {
-    plan111,
-    plan222,
-    plan333,
-    plan444,
-    plan11,
+    plan23,
+    plan24,
     plan22,
+    plan122,
+    plan32,
+    plan132,
     plan33,
-    plan44,
+    plan133,
+    plan34,
+    plan134,
+    plan37,
+    plan137,
+    plan39,
+    plan139,
 }

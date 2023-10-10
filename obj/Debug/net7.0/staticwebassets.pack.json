@@ -5,18 +5,6 @@
       "PackagePath": "staticwebassets\\parcial1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\VINAS\\parcial1\\wwwroot\\assets\\images\\PUBLICIDAD-FASSEG-AUTO.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\PUBLICIDAD-FASSEG-AUTO.jpg"
-    },
-    {
-      "Id": "C:\\Users\\VINAS\\parcial1\\wwwroot\\assets\\images\\SEGURO-CONTRA-TERCEROS-COMPLETO-03.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\SEGURO-CONTRA-TERCEROS-COMPLETO-03.jpg"
-    },
-    {
-      "Id": "C:\\Users\\VINAS\\parcial1\\wwwroot\\assets\\images\\seguro-responsabilidad-civil.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\seguro-responsabilidad-civil.jpg"
-    },
-    {
       "Id": "C:\\Users\\VINAS\\parcial1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

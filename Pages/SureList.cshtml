@@ -1,6 +1,63 @@
 ﻿@page
 @model parcial1.Pages.SureListModel
 @{
+    ViewData["Title"] = "Grilla de Planes Aumotor";
 }
+<h1>@ViewData["Title"]</h1>
 
-<h2>Planes de Automotor</h2>
+<br>
+<br>
+
+<form method="post">
+  <div class="mb-3">
+    <label asp-for="NewSure.Cobertura" class="form-label"></label>
+    <input class="form-control" asp-for="NewSure.Cobertura">
+  </div>
+  <div class="mb-3">
+    <label asp-for="NewSure.Description" class="form-label"></label>
+    <input  class="form-control" asp-for="NewSure.Description">
+  </div>
+  <div class="mb-3">
+    <label asp-for="NewSure.Planes" class="form-label"></label>
+    <input  class="form-control" asp-for="NewSure.Planes">
+  </div>
+  <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Recuperador</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Con Lojack</option>
+        <option>Sin Lojack</option>
+      </select>
+  </div>
+  <div class="mb-3">
+    <label asp-for="NewSure.Tasa" class="form-label"></label>
+    <input  class="form-control" asp-for="NewSure.Tasa">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Incluir</button>
+  
+  <button type="submit" class="btn btn-primary">Eliminar</button>
+
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<ol>
+    @foreach(var plan in Model.Planes)
+    {
+        <li><h5>@plan.Cobertura<a asp-route="OnPostDelete" asp-route-cobertura="plan.Cobertura"> Borrar </a></h5></li>
+        <b>Coberturas:</b> @plan.Description
+        <br>
+        <b>N° de Plan:</b> @plan.Planes
+        <br>
+        <b>Recuperador:</b> @plan.Lojack
+        <br>
+        <b>Tasa:</b> @plan.Tasa
+        <br>
+        <br>
+        <br>
+    }
+</ol>

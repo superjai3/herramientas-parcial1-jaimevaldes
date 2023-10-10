@@ -1,0 +1,130 @@
+﻿@page
+@model SolicitudModel
+@{
+    ViewData["Title"] = "Solicitud";
+}
+
+
+
+<div class="text-center">
+
+<h1 class="text-danger">Solicitud de cobertura.</h1>
+
+<br>
+<br>
+<br>
+
+
+<h3>DATOS DEL TOMADOR</h3>
+
+<form class="row g-3 needs-validation" novalidate="">
+
+    <div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationTooltip01" required="">
+            <div class="valid-tooltip">
+                Ingresa tu Nombre.
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationTooltip02" required="">
+            <div class="valid-tooltip">
+                Ingresa tu Apellido.
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Localidad</label>
+            <input type="text" class="form-control" id="validationTooltip01" required="">
+            <div class="valid-tooltip">
+                Ingresa tu Localidad.
+            </div>
+        </div>
+        <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="validationTooltip01" required="">
+            <div class="valid-tooltip">
+                Ingresa tu Provincia.
+            </div>
+        </div>
+     <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Código Postal</label>
+            <input type="text" class="form-control" id="validationTooltip01" required="">
+            <div class="valid-tooltip">
+                Ingresa tu Código Postal.
+            </div>
+        </div>
+    </div>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+<h3>DATOS DEL VEHÍCULO</h3>
+
+<div>
+    <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Patente</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa la Patente.
+    </div>
+        </div>
+    
+    <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Año</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa el Año del Auto.
+    </div>
+        </div>
+    
+    <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Marca</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa la Marca.
+    </div>
+        </div>
+    
+    <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Modelo</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa el Modelo.
+    </div>
+        </div>
+
+<div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Versión</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa la Versión.
+    </div>
+        </div>
+
+
+        <div class="col-md-3 position-relative">
+    <label for="validationTooltip05" class="form-label">Plan Deseado</label>
+    <input type="text" class="form-control" id="validationTooltip05" required="">
+    <div class="invalid-tooltip">
+     Ingresa el Plan Deseado.
+    </div>
+        </div>
+
+
+</div>
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Solicitar</button>
+  </div>
+</form>
+
+
+</div>
